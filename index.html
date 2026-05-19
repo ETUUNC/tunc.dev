@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tunç | Yazılım Geliştirici & Portfolyo</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght=300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container header__wrapper">
+            <a href="#" class="logo">tunc<span>.dev</span></a>
+            <nav>
+                <ul class="nav__list">
+                    <li><a href="#hakkimda" class="nav__link">Hakkımda</a></li>
+                    <li><a href="#projeler" class="nav__link">Projeler</a></li>
+                    <li><a href="#yetenekler" class="nav__link">Yetenekler</a></li>
+                    <li>
+                        <a href="assets/cv.pdf" download="Emrullah_TUNÇ_CV.pdf" class="btn--primary">
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                            CV'yi İndir (PDF)
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container" id="hakkimda">
+        <section class="hero">
+            <div class="hero__content">
+                <h1 class="hero__title">
+                    Merhaba, Ben <span>Emrullah TUNÇ</span>
+                </h1>
+                <p class="hero__description">
+                    Bilgisayar Mühendisliği 2. sınıf öğrencisiyim. ÜNİDES tarafından desteklenen yaklaşık 10 kişilik geniş ölçekli bir AR-GE projesinde, sistemin çekirdeğini oluşturan 3 kişilik Yapay Zeka (AI) ekibinin koordinatörlüğünü ve geliştirme süreçlerini yürütmekteyim. Uluslararası arenada Türkiye, Portekiz ve İtalya ortaklı Erasmus+ projelerinde yer alarak Ankara ve Portekiz'de robotik kodlama ve otomasyon üzerine uluslararası vizyon eğitimlerine katıldım. Akademik hayatımda C, Java, Python ve Veri Yapıları eğitimleriyle teorik altyapımı güçlendirirken; bireysel süreçte Flask, yapay zeka optimizasyonları, saf HTML/CSS ve veritabanı mimarileriyle dinamik çözümler geliştiriyorum.
+                </p>
+                <div class="hero__socials">
+                    <a href="mailto:emrullahtunc20@gmail.com" class="hero__link">Email Gönder &rarr;</a>
+                    <span class="hero__separator">|</span>
+                    <a href="https://github.com/ETUUNC" target="_blank" class="hero__link">GitHub</a>
+                    <span class="hero__separator">|</span>
+                    <a href="https://www.linkedin.com/in/emrullah-tun%C3%A7-a59050324/?skipRedirect=true" target="_blank" class="hero__link">LinkedIn</a>
+                </div>
+            </div>
+            <div class="hero__avatar-wrapper">
+                <img src="assets/profil.jpeg" alt="Tunç" class="hero__avatar" onerror="this.style.display='none'">
+            </div>
+        </section>
+    </div>
+
+    <div class="container">
+        <main class="section" id="projeler">
+            <h2 class="section__title">
+                <span class="section__badge"></span> Öne Çıkan Projeler
+            </h2>
+            
+            <div class="project-grid">
+                <div class="project-card">
+                    <div>
+                        <h3 class="project-card__title">Güneş Enerjisi AI Takip & Arıza Tespit Sistemi</h3>
+                        <p class="project-card__desc">
+                            ÜNİDES tarafından desteklenen, solar panellerdeki verimlilik kaybını ve yapısal arızaları görüntü işleme algoritmalarıyla analiz eden kapsamlı bir AR-GE projesi. Yaklaşık 10 kişilik çok disiplinli ana proje grubunun odağındaki 3 kişilik Yapay Zeka (AI) alt ekibine liderlik ederek; veri seti hazırlama, model optimizasyonu (TensorFlow Lite) ve akıllı sistem entegrasyon süreçlerini başarıyla yürüttüm. Detayları LinkedIn üzerinde paylaşılmıştır.
+                        </p>
+                    </div>
+                    <div class="project-card__footer">
+                        <span class="tag--ai">AI / AR-GE / ÜNİDES</span>
+                        <a href="https://www.linkedin.com/feed/update/urn:li:activity:7440372185812180992/" target="_blank" class="project-card__link">LinkedIn'de Gör &rarr;</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div>
+                        <h3 class="project-card__title">RUSH | Spor Salonu Yönetim & Takip Sistemi</h3>
+                        <p class="project-card__desc">
+                            Ziyaretçiler için salon bilgilendirme arayüzü ve dinamik üyelik başvuru formu barındıran full-stack web uygulaması. Arka planda Flask (Python) ve SQLite3 mimarisi kullanılarak tamamen admin (yönetici) odaklı geliştirilmiştir. Gelen başvuruların güvenli bir şekilde veritabanına işlenmesini, admin paneli üzerinden onay/ret yönetimini ve WTForms ile CSRF güvenliği altındaki veri güncellemelerini sağlar.
+                        </p>
+                    </div>
+                    <div class="project-card__footer">
+                        <span class="tag--django">Flask / Python / SQLite3</span>
+                        <a href="#" class="project-card__link">Detayları Gör &rarr;</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div>
+                        <h3 class="project-card__title">İkra Nakliyat | Kurumsal Web Sitesi</h3>
+                        <p class="project-card__desc">
+                            Yerel bir taşımacılık firması için hazırladığım, kullanıcı deneyimi yüksek ve responsive (mobil uyumlu) açılış sayfası projesi. BEM standartlarına uygun, sürdürülebilir saf HTML and CSS mimarisiyle geliştirildi. GitHub Pages üzerinde canlı önizlemesi bulunmaktadır.
+                        </p>
+                    </div>
+                    <div class="project-card__footer">
+                        <span class="tag--ai">HTML5 / CSS3 / Freelance</span>
+                        <a href="https://etuunc.github.io/ikra-nakliyat/" target="_blank" class="project-card__link">Canlı Önizleme &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <div class="container">
+        <section class="section" id="yetenekler">
+            <h2 class="section__title">
+                <span class="section__badge"></span> Teknolojiler & Akademik Yetkinlikler
+            </h2>
+            <div class="skills-wrapper">
+                <span class="skill-badge">Yapay Zeka (AI Coor.)</span>
+                <span class="skill-badge">TensorFlow Lite / NumPy</span>
+                <span class="skill-badge">Python</span>
+                <span class="skill-badge">Flask Framework</span>
+                <span class="skill-badge">C (Akademik)</span>
+                <span class="skill-badge">Java (Akademik)</span>
+                <span class="skill-badge">Veri Yapıları (Data Structures)</span>
+                <span class="skill-badge">SQLite3 & SQL</span>
+                <span class="skill-badge">HTML5 & CSS3 (Vanilla)</span>
+                <span class="skill-badge">Git & GitHub</span>
+                <span class="skill-badge">Robotik & Otomasyon</span>
+            </div>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <div class="container footer__text">
+            &copy; 2026 Tunç. Tüm Hakları Saklıdır. HTML & Vanilla CSS ile geliştirilmiştir.
+        </div>
+    </footer>
+
+</body>
+</html>
